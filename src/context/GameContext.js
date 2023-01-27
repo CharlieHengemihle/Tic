@@ -3,7 +3,7 @@ const { createContext, useState, useContext } = require('react');
 const GameContext = createContext();
 
 const GameProvider = ({ children }) => {
-  const [board, setBoard] = useState([]);
+  const [board, setBoard] = useState(['', '', '', '', '', '', '', '', '']);
   const [player, setPlayer] = useState('X');
   const [active, setActive] = useState(true);
   const [message, setMessage] = useState('Big, beautiful Bodacious the Bull');
