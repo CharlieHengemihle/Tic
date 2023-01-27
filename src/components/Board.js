@@ -3,7 +3,7 @@ import Tile from './Tile.js';
 import './Board.css';
 
 export default function Board() {
-  const { board, player } = useGameContext();
+  const { board } = useGameContext();
 
   return (
     <div className="board">

@@ -4,7 +4,7 @@ const GameContext = createContext();
 
 const GameProvider = ({ children }) => {
   const [board, setBoard] = useState(['', '', '', '', '', '', '', '', '']);
-  const [player, setPlayer] = useState('X');
+  const [player, setPlayer] = useState('Snake');
   const [active, setActive] = useState(true);
   const [message, setMessage] = useState('Big, beautiful Bodacious the Bull');
 
