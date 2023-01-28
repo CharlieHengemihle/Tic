@@ -3,7 +3,7 @@ import './Tile.css';
 // import horse from '../../public/horse.png';
 // import snake from '../../public/snake.png';
 export default function Tile({ tileContent, index }) {
-  const { player, setPlayer, board, active, setBoard } = useGameContext();
+  const { player, setPlayer, board, active, setBoard, setMessage } = useGameContext();
 
   function handleClick() {
     if (tileContent === 'Snake') {
@@ -22,8 +22,10 @@ export default function Tile({ tileContent, index }) {
       //   board[index] = player;
       if (player === 'Snake') {
         setPlayer('Horse');
+        setMessage(`It's Horses turn`);
       } else {
         setPlayer('Snake');
+        setMessage(`It's Snakes turn`);
       }
     }
     // return board;
@@ -33,7 +35,7 @@ export default function Tile({ tileContent, index }) {
     <div className={'tile'} onClick={handleClick}>
       <section className={`${tileContent}`}>
         {/* <img className="hidden" src={`../../${tileContent}.png`} onClick={remove class='hidden'}/> */}
-        <p>{tileContent}</p>
+        {/* <p>{tileContent}</p> */}
       </section>
     </div>
   );

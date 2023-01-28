@@ -1,19 +1,21 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import { useGameContext } from './context/GameContext.js';
 import Board from './components/Board.js';
+import Reset from './components/Reset.js';
+// import Message from './components/Message.js';
 
 function App() {
-  const { board, setBoard, active, setActive, player, setPlayer, message, setMessage } =
-    useGameContext();
+  const { message } = useGameContext();
 
   return (
     <div className="App">
-      <section>
+      <>
         <h1>Snake Horse!</h1>
-        <p> It&apos;s the {player}s turn </p>
+        <span>{message}</span>
         <Board />
-      </section>
+        <Reset />
+      </>
     </div>
   );
 }
