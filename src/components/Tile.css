@@ -1,0 +1,36 @@
+.tile {
+  display: flex;
+  background-color: aquamarine;
+  height: 20vh;
+  width: 20vw;
+  margin: 2vh;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  height: 15vh;
+  width: 15vh;
+}
+
+.hidden {
+  display: none;
+}
+section {
+  height: 15vh;
+  width: 15vh;
+}
+.Snake {
+  background-image: url('../../public/snake.png');
+  background-color: green;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.Horse {
+  background-image: url('../../public/horse.png');
+  background-color: brown;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-items: center;
+  align-content: center;
+}
